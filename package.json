@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node server/index.js",
+    "start": "cd client && npm i && npm run build && cd .. & node server/index.js",
     "dev": "nodemon server/index.js"
   },
   "keywords": [],
