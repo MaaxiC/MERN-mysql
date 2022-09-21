@@ -2,11 +2,12 @@ import { config } from 'dotenv';
 
 config();
 const server = {
-    port: process.env.PORT,
-    host: process.env.HOST,
-    user: process.env.USER,
-    password: process.env.PASSWORD,
-    database: process.env.DATABASE,
+    port: process.env.PORT || 4000,
+    host: process.env.HOST || 'localhost',
+    user: process.env.USER || 'root',
+    password: process.env.PASSWORD || 'password',
+    database: process.env.DATABASE || 'testdb',
+    db_port: process.env.DB_PORT || 3306,
 };
 
 export { server };

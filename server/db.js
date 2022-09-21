@@ -3,7 +3,7 @@ import { server } from './config.js';
 
 export const pool = createPool({
     host: server.host,
-    port: 3306,
+    port: server.db_port,
     user: server.user,
     password: server.password,
     database: server.database,
